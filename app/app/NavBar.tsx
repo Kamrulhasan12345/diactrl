@@ -35,8 +35,9 @@ export function NavBar({ user }: { user: DefaultSession["user"] }) {
               </Link>
             ) : (
               <button
-                className="bg-blue-500 py-1 px-2 rounded-lg text-white hover:bg-blue-700 focus:ring-2 focus:ring-blue-500"
+                type="button"
                 onClick={() => signIn()}
+                className="mr-3 rounded-lg bg-blue-500 px-5 py-2.5 text-center text-sm font-bold text-white hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 md:mr-0"
               >
                 Sign in
               </button>
@@ -57,9 +58,9 @@ export function NavBar({ user }: { user: DefaultSession["user"] }) {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 ></path>
               </svg>
             </button>
@@ -74,7 +75,7 @@ export function NavBar({ user }: { user: DefaultSession["user"] }) {
               <li>
                 <Link
                   href="/"
-                  className="block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-blue-700"
+                  className="block rounded py-2 pl-3 pr-4 font-bold text-gray-700 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-blue-700"
                 >
                   Dashboard
                 </Link>
@@ -82,7 +83,7 @@ export function NavBar({ user }: { user: DefaultSession["user"] }) {
               <li>
                 <Link
                   href="/calender"
-                  className="block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-blue-700"
+                  className="block rounded py-2 pl-3 pr-4 font-bold text-gray-700 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-blue-700"
                   aria-current="page"
                 >
                   Calender
@@ -91,7 +92,7 @@ export function NavBar({ user }: { user: DefaultSession["user"] }) {
               <li>
                 <Link
                   href="/myplan"
-                  className="block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-blue-700"
+                  className="block rounded py-2 pl-3 pr-4 font-bold text-gray-700 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-blue-700"
                 >
                   My Plan
                 </Link>
@@ -99,7 +100,7 @@ export function NavBar({ user }: { user: DefaultSession["user"] }) {
               <li>
                 <Link
                   href="/settings"
-                  className="block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-blue-700"
+                  className="block rounded py-2 pl-3 pr-4 font-bold text-gray-700 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-blue-700"
                 >
                   Settings
                 </Link>
